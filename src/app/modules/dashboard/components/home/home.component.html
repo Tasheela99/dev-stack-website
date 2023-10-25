@@ -1,42 +1,9 @@
 <!--header-->
 <div class="header-outer">
   <div class="header-inner">
-    <nav class="navbar navbar-expand-md">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          a
-          <span>v</span>
-          o
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="">Menu</span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" routerLink="/dashboard/home"
-                 routerLinkActive="active-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <app-header></app-header>
   </div>
 </div>
-
 <!--header-->
 <!--carousel-section-->
 <owl-carousel-o [options]="customOptions">
@@ -53,7 +20,7 @@
                   <button class="btn btn-danger">{{slide.buttonText}}</button>
                 </div>
                 <div class="right-items">
-                  <h1>{{count}}</h1>
+                  <h1>{{slide.countProject}}</h1>
                   <p>{{slide.bottomText}}</p>
                 </div>
               </div>
@@ -86,22 +53,22 @@
   <div class="about-us-section-inner">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h1 class="title-name">ABOUT US</h1>
+        <div class="col-12" appAnimation>
+          <h1 class="title-name animate__animated animate__fadeInUp ">ABOUT US</h1>
         </div>
       </div>
       <div class="content-outer">
-        <div class="row">
+        <div class="row" appAnimation>
           <div class="col-12 service-items">
-            <div class="items-inner" *ngFor="let item of aboutSectionItems">
+            <div class="items-inner animate__animated animate__fadeInUp animate__delay-1s" *ngFor="let item of aboutSectionItems">
               <img src="{{item.icon}}" alt="{{item.alt}}" width="60px">
               <p class="service-description">{{item.serviceName}}</p>
             </div>
           </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-center service-details">
-          <div class="col-12 col-lg-4 left">
-            <div class="service-inner">
+        <div class="row d-flex align-items-center justify-content-center service-details animate__animated animate__fadeInUp animate__delay-1s" appAnimation>
+          <div class="col-12 col-lg-4 left" >
+            <div class="service-inner ">
               <h2 class="text-end">Welcome to AVO A Personal Porfolio Web Agency</h2>
               <p class="text-end">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
                 language ocean. A small
@@ -126,10 +93,10 @@
 
           </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center" appAnimation>
           <div class="inner-items"></div>
           <div class="col-12 col-lg-4 providing-service ">
-            <div class="providing-service-inner">
+            <div class="providing-service-inner animate__animated animate__fadeInUp animate__delay-2s">
               <div class="top"><span>01</span><h4>Search Engine Optimization</h4></div>
               <div class="bottom">
                 <p>Far far away, behind the word mountains</p>
@@ -137,7 +104,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 providing-service ">
-            <div class="providing-service-inner">
+            <div class="providing-service-inner animate__animated animate__fadeInUp animate__delay-2s">
               <div class="top"><span>02</span><h4>Search Engine Optimization</h4></div>
               <div class="bottom">
                 <p>Far far away, behind the word mountains</p>
@@ -145,7 +112,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 providing-service ">
-            <div class="providing-service-inner">
+            <div class="providing-service-inner animate__animated animate__fadeInUp animate__delay-2s">
               <div class="top"><span>03</span><h4>Search Engine Optimization</h4></div>
               <div class="bottom">
                 <p>Far far away, behind the word mountains</p>
@@ -172,16 +139,16 @@
 <div class="works-section-outer">
   <div class="works-section-inner">
     <div class="container">
-      <div class="row" >
+      <div class="row" appAnimation>
         <div class="col-12 title text-center">
-          <h1>Our Works</h1>
+          <h1 class="animate__animated animate__fadeInUp">Our Works</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row work-outer animate__delay-1s" appAnimation >
         <div class="col-12 col-lg-5 image">
           <div class="item-image image-01"></div>
         </div>
-        <div class="col-12 col-lg-7 description work-1">
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow  work-1 " >
           <p class="work-title">web design</p>
           <h1 class="work-name">Cassette tape</h1>
           <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -196,8 +163,8 @@
           <button class="btn-primary">view portfolio</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-lg-7 description work-2">
+      <div class="row work-outer animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-2">
           <p class="work-title">application</p>
           <h1 class="work-name">miniwall clock</h1>
           <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -215,11 +182,11 @@
           <div class="item-image image-02"></div>
         </div>
       </div>
-      <div class="row">
+      <div class="row work-outer animate__delay-1s" appAnimation>
         <div class="col-12 col-lg-5 image">
           <div class="item-image image-03"></div>
         </div>
-        <div class="col-12 col-lg-7 description work-3">
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-3">
           <p class="work-title">UI/UX design</p>
           <h1 class="work-name">avo portfolio agency</h1>
           <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -234,8 +201,8 @@
           <button class="btn-primary">view portfolio</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-lg-7 description work-4">
+      <div class="row work-outer animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-4">
           <p class="work-title">web development</p>
           <h1 class="work-name">hand writing</h1>
           <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -253,11 +220,11 @@
           <div class="item-image image-04"></div>
         </div>
       </div>
-      <div class="row">
+      <div class="row work-outer animate__delay-1s" appAnimation>
         <div class="col-12 col-lg-5 image">
           <div class="item-image image-05"></div>
         </div>
-        <div class="col-12 col-lg-7 description work-5">
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-5">
           <p class="work-title">illustration</p>
           <h1 class="work-name">key board</h1>
           <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -272,8 +239,8 @@
           <button class="btn-primary">view portfolio</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-lg-7 description work-6">
+      <div class="row work-outer animate__delay-1s" appAnimation>
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-6">
           <p class="work-title">web development</p>
           <h1 class="work-name">spiral</h1>
           <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -305,12 +272,12 @@
 
 
 <!--testimonial-section-->
-<div class="testimonial-outer">
+<div class="testimonial-outer" appAnimation>
   <div class="testimonial-inner">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center title">Clients Says About Us?</h1>
+          <h1 class="text-center title animate__animated animate__fadeInUp animate__delay-1s">Clients Says About Us?</h1>
 
         </div>
         <div class="col-12">
@@ -328,7 +295,7 @@
                           <div class="image">
                             <img [src]="testimonial.image" alt="">
                           </div>
-                          <div class="details">
+                          <div class="details ">
                             <div class="name">{{testimonial.name}}</div>
                             <div class="position">{{testimonial.position}}</div>
                           </div>
@@ -349,18 +316,18 @@
 <!--testimonial-section-->
 
 
-<div class="project-estimate-outer">
+<div class="project-estimate-outer" >
   <div class="project-estimate-inner">
     <div class="container">
       <div class="row">
         <div class="col-12 project-estimate-inner-image">
-          <div class="row">
-            <div class=" col-12 col-lg-8 inner-items">
-              <p class="get-started">get stated</p>
-              <h3>Fill in the brief and get the project estimate</h3>
-              <p class="desc">'far far away behind the world mountains, far from the countries Vokalia and Constantia,
+          <div class="row" appAnimation>
+            <div class=" col-12 col-lg-8 inner-items ">
+              <p class="get-started animate__animated animate__fadeInUp animate__delay-1s">get stated</p>
+              <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Fill in the brief and get the project estimate</h3>
+              <p class="desc animate__animated animate__fadeInUp animate__delay-1s">'far far away behind the world mountains, far from the countries Vokalia and Constantia,
                 there live the blind texts.</p>
-              <button class="btn btn-danger">Get Started</button>
+              <button class="btn btn-danger animate__animated animate__fadeInUp animate__delay-1s">Get Started</button>
             </div>
           </div>
 
@@ -377,14 +344,14 @@
   </div>
 </div>
 <!--blogs-section-->
-<div class="blogs-section-outer">
+<div class="blogs-section-outer" appAnimation>
   <div class="blogs-section-inner">
     <div class="container">
       <div class="row">
-        <h1 class="col-12 title">recent blog</h1>
+        <h1 class="col-12 title animate__animated animate__fadeInUp animate__delay-1s">recent blog</h1>
       </div>
-      <div class="row">
-        <div class="col-12 col-lg-3 col-md-6 blog-card-outer" *ngFor="let blogItem of blogs">
+      <div class="row" appAnimation>
+        <div class="col-12 col-lg-3 col-md-6 blog-card-outer animate__animated animate__fadeInUp animate__delay-1s animate__slow" *ngFor="let blogItem of blogs">
           <div class="blog-card-inner">
             <div class="blog-card-header">
               <h5>{{blogItem.header}}</h5>
@@ -429,10 +396,10 @@
             <div class="avo">
               <h5 class="title">avo</h5>
               <p>Far far away, behind <br>the word mountains, <br>far from the countries.</p>
-              <div class="social-links">
-                <div class="icon-outer"><i class="fa-brands fa-twitter"></i></div>
-                <div class="icon-outer"><i class="fa-brands fa-facebook-f"></i></div>
-                <div class="icon-outer"><i class="fa-brands fa-instagram"></i></div>
+              <div class="social-links" appAnimation>
+                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-twitter"></i></div>
+                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="icon-outer animate__animated animate__fadeInUp animate__delay-1s"><i class="fa-brands fa-instagram"></i></div>
               </div>
             </div>
             <div class="community">

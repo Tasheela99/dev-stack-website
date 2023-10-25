@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {CarouselModule} from "ngx-owl-carousel-o";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import {CarouselModule} from "ngx-owl-carousel-o";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   exports: [
