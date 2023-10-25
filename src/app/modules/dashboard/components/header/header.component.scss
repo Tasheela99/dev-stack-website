@@ -1,33 +1,46 @@
-.nav-outer{
+.nav-outer {
   width: 100%;
   height: 100%;
 
-  .nav-inner{
+  .nav-inner {
     width: 100%;
     height: 100%;
 
 
-    .container{
+    .container {
 
+      .navbar{
+        z-index: 5000!important;
 
-      .navbar-brand{
-        color: #FFFFFF;
-        font-size: 25px;
-
-        span{
-          color: #D1002c;
-
+        .navbar-toggler{
+          span{
+            color: rgba(0, 0, 0, 0.5)!important;
+            text-transform: uppercase;
+            font-size: 16px!important;
+          }
         }
       }
 
-      .navbar-nav{
-        .nav-item{
 
-          .nav-link{
-            color: #FFFFFF;
+      .navbar-brand {
+        color: #FFFFFF;
+        font-size: 25px;
+        span {
+          color: #D1002c;
+          letter-spacing: 0!important;
+        }
+      }
+
+      .navbar-nav {
+        .nav-item {
+
+          .nav-link {
+            color: #FFFFFF99;
+            text-transform: uppercase;
           }
-          .active-link{
-            color: #D1002c;
+
+          .active-link {
+            color: #D1002c!important;
           }
         }
       }
@@ -38,32 +51,59 @@
 
 @media (min-width: 998px) {
 
- .container{
-   padding: 0 150px;
+  .container {
+    padding: 0 150px;
 
-   .navbar-nav{
-     .nav-item{
-       padding: 0 20px;
-     }
-   }
- }
+    .navbar-nav {
+      .nav-item {
+        padding: 0 20px;
+      }
+    }
+  }
 
 }
+
 @media (max-width: 998px) {
-  .navbar{
-    background-color: black;
 
-    .nav-item{
-      background-color: black;
-      color: #FFFFFF;
-    }
+  .nav-outer {
+    .nav-inner {
+      .navbar {
 
+        .navbar-brand{
+          color: black;
 
-    .navbar-toggler{
-      color: #A0A0B4;
-      border-radius: 0!important;
-      border: none!important;
-      outline: none!important;
+          span{
+            color: #D1002c!important;
+          }
+        }
+
+        background-color: #FFFFFF;
+        .navbar-toggler {
+          border-radius: 0 !important;
+          border: none !important;
+          outline: none !important;
+          span{
+            color: rgba(0, 0, 0, 0.5)!important;
+            text-transform: uppercase;
+            font-size: 16px!important;
+          }
+        }
+
+        .navbar-nav{
+          .nav-item{
+            .nav-link{
+              color: black;
+              text-transform: uppercase;
+              font-size: 13px;
+            }
+
+            .active-link{
+              color: #D1002c!important;
+            }
+          }
+        }
+
+      }
     }
   }
 
