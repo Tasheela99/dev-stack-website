@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-home',
@@ -8,14 +9,17 @@ import {OwlOptions} from "ngx-owl-carousel-o";
 })
 export class HomeComponent  implements  OnInit{
 
+  constructor(private title:Title) {
+  }
+
   blogsDate:any = 'June 10, 2020';
 
-  slidesStore: any[] = [
+  landingSlidesStore: any[] = [
     {
 
       imageLink: 'https://preview.colorlib.com/theme/avo/images/bg_1.jpg.webp',
       titleText: 'we create modern & minimal website',
-      subTitleText: 'a small river named duden flows by their place and supplies it with the necessary regelialia.',
+      subTitleText: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
       buttonText: 'start project',
       countProject: 0,
       bottomText: 'more than a hundred successful projects'
@@ -23,7 +27,7 @@ export class HomeComponent  implements  OnInit{
     {
       imageLink: 'https://preview.colorlib.com/theme/avo/images/bg_2.jpg.webp',
       titleText: 'we create modern & minimal website',
-      subTitleText: 'a small river named duden flows by their place and supplies it with the necessary regelialia.',
+      subTitleText: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
       buttonText: 'explore projects',
       countProject: 0,
       bottomText: 'years of experienced'
@@ -144,6 +148,8 @@ export class HomeComponent  implements  OnInit{
   };
 
   ngOnInit(): void {
+
+    this.title.setTitle("Dashboard | Home")
     this.countUp(0, 400,20);
     this.countUp(1, 21,400);
 
@@ -153,7 +159,7 @@ export class HomeComponent  implements  OnInit{
     let currentCount = 0;
     const intervalId = setInterval(() => {
       currentCount++;
-      this.slidesStore[index].countProject = currentCount;
+      this.landingSlidesStore[index].countProject = currentCount;
       if (currentCount >= finishCount) {
         clearInterval(intervalId);
       }

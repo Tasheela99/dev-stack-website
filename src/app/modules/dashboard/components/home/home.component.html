@@ -6,38 +6,40 @@
 </div>
 <!--header-->
 <!--carousel-section-->
-<owl-carousel-o [options]="customOptions">
-  <ng-container *ngFor="let slide of slidesStore">
-    <ng-template carouselSlide>
-      <div class="landing-image-outer">
-        <div class="landing-image-inner" [style.background-image]="'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(' + slide.imageLink + ')'">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 items">
-                <div class="left-items">
-                  <h1 class="title col-lg-10">{{slide.titleText}}</h1>
-                  <p class="sub-title">{{slide.subTitleText}}</p>
-                  <button class="btn btn-danger">{{slide.buttonText}}</button>
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let slide of landingSlidesStore">
+      <ng-template carouselSlide>
+        <div class="landing-image-outer">
+          <div class="landing-image-inner" [style.background-image]="'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(' + slide.imageLink + ')'">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 items">
+                  <div class="left-items">
+                    <h1 class="title col-lg-10">{{slide.titleText}}</h1>
+                    <p class="sub-title">{{slide.subTitleText}}</p>
+                    <button class="btn btn-danger">{{slide.buttonText}}</button>
+                  </div>
+                  <div class="right-items">
+                    <h1>{{slide.countProject}}</h1>
+                    <p>{{slide.bottomText}}</p>
+                  </div>
                 </div>
-                <div class="right-items">
-                  <h1>{{slide.countProject}}</h1>
-                  <p>{{slide.bottomText}}</p>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <a href=""><button><i class="fa-solid fa-circle-play"></i></button></a>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <a href=""><button><i class="fa-solid fa-circle-play"></i></button></a>
-              </div>
-            </div>
+
           </div>
-
         </div>
-      </div>
-    </ng-template>
-  </ng-container>
+      </ng-template>
+    </ng-container>
 
-</owl-carousel-o>
+  </owl-carousel-o>
+
+
 <!--carousel-section-->
 
 <div class="divider-bars-1">
@@ -164,7 +166,7 @@
         </div>
       </div>
       <div class="row work-outer work-outer-2 animate__delay-1s" appAnimation>
-        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-2">
+        <div class="col-12 col-lg-7 description animate__animated animate__fadeInUp animate__slow work-2" >
           <p class="work-title">application</p>
           <h1 class="work-name">miniwall clock</h1>
           <p class="work-description">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
@@ -343,6 +345,8 @@
     <div class="right-bar"></div>
   </div>
 </div>
+
+
 <!--blogs-section-->
 <div class="blogs-section-outer" appAnimation>
   <div class="blogs-section-inner">
@@ -351,7 +355,7 @@
         <h1 class="col-12 title animate__animated animate__fadeInUp animate__delay-1s">recent blog</h1>
       </div>
       <div class="row" appAnimation>
-        <div class="col-12 col-lg-3 col-md-6 blog-card-outer animate__animated animate__fadeInUp animate__delay-1s animate__slow" *ngFor="let blogItem of blogs">
+        <div class="col-12 col-lg-3 blog-card-outer animate__animated animate__fadeInUp animate__delay-1s animate__slow" *ngFor="let blogItem of blogs">
           <div class="blog-card-inner">
             <div class="blog-card-header">
               <h5>{{blogItem.header}}</h5>
