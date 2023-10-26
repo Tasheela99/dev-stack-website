@@ -7,9 +7,7 @@ export class NavbarDirective implements AfterViewInit{
 
   ngAfterViewInit() {}
 
-  @Input() scrollPosition: number = 100;
-  @Input() initialColor: string = 'transparent';
-  @Input() scrollColor: string = 'white';
+  @Input() scrollPosition: number = 200;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
   @HostListener('window:scroll', ['$event'])
@@ -19,9 +17,9 @@ export class NavbarDirective implements AfterViewInit{
 
     if (scrollY > this.scrollPosition) {
       this.renderer.setStyle(this.el.nativeElement, 'color', 'black');
-      const activeLinks = this.el.nativeElement.querySelectorAll('active');
+      const activeLinks = this.el.nativeElement.querySelectorAll('.active-link');
       activeLinks.forEach((link: any) => {
-        this.renderer.setStyle(link, 'color', 'red');
+        this.renderer.setStyle(link, 'color', '#D1002c');
       });
 
     } else {

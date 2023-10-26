@@ -5,7 +5,7 @@ import {Directive, ElementRef, HostListener, Input, Renderer2} from '@angular/co
 })
 export class HeaderDirective {
 
-  @Input() scrollPosition: number = 100;
+  @Input() scrollPosition: number = 200;
   @Input() initialColor: string = 'transparent';
   @Input() scrollColor: string = 'white';
 

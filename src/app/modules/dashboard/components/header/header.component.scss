@@ -7,10 +7,13 @@
     height: 100%;
 
 
+
     .container {
 
       .navbar{
         z-index: 5000!important;
+        border: 2px solid red;
+
 
         .navbar-toggler{
           span{
@@ -37,6 +40,12 @@
           .nav-link {
             color: #FFFFFF99;
             text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+
+            &:hover{
+              color: #D1002c;
+            }
           }
 
           .active-link {
@@ -56,7 +65,7 @@
 
     .navbar-nav {
       .nav-item {
-        padding: 0 20px;
+        padding: 0 15px;
       }
     }
   }
@@ -95,6 +104,7 @@
               color: black;
               text-transform: uppercase;
               font-size: 13px;
+
             }
 
             .active-link{
@@ -106,5 +116,8 @@
       }
     }
   }
+}
 
+.hovered{
+  color: #D1002c!important;
 }

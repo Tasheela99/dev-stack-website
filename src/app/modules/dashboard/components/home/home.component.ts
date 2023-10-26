@@ -129,6 +129,9 @@ export class HomeComponent  implements  OnInit{
       400: {
         items: 1
       },
+      590:{
+        items:3
+      },
       740: {
         items: 3
       },

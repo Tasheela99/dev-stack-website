@@ -1,5 +1,5 @@
-<div class="nav-outer" style="z-index: 5000">
-  <div class="nav-inner" style="z-index: 5000">
+<div class="nav-outer" >
+  <div class="nav-inner">
     <nav class="navbar navbar-expand-lg fixed-top" appHeader>
       <div class="container">
         <a class="navbar-brand" href="#" appNavbar>
@@ -15,19 +15,19 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item" >
               <a class="nav-link active" aria-current="page" href="#" routerLink="/dashboard/home"
-                 routerLinkActive="active-link">Home</a>
+                 routerLinkActive="active-link" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" appNavbar>About</a>
+              <a class="nav-link" href="#" appNavbar (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" appNavbar>Work</a>
+              <a class="nav-link" href="#" appNavbar (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" appNavbar>Blog</a>
+              <a class="nav-link" href="#" appNavbar (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" appNavbar>Contact</a>
+              <a class="nav-link" href="#" appNavbar (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">Contact</a>
             </li>
           </ul>
         </div>
