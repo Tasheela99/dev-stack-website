@@ -6,12 +6,9 @@
   z-index: 5000 !important;
   position: relative;
   top: 0;
-
   .header-inner {
     width: 100%;
     height: 100%;
-
-
   }
 }
 
@@ -26,7 +23,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 
     .container {
       width: 100%;
@@ -72,7 +68,6 @@
             flex-direction: column;
 
             h1 {
-
               border-right: 8px solid #D1002c;
               margin: 0;
               padding: 0 5px;
@@ -114,13 +109,10 @@
             box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
           }
         }
-
-
       }
     }
   }
 }
-
 
 //landing-section
 
@@ -149,7 +141,6 @@
       position: absolute;
       right: 0;
     }
-
   }
 }
 
@@ -180,7 +171,6 @@
       right: 0;
       top: 75px;
     }
-
   }
 }
 
@@ -210,7 +200,6 @@
       position: absolute;
       right: 0;
     }
-
   }
 }
 
@@ -220,7 +209,6 @@
   padding: 100px 0;
 
   .about-us-section-inner {
-
     h1.title-name {
       text-align: center;
       font-weight: 900;
@@ -232,7 +220,6 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-
 
       .items-inner {
         display: flex;
@@ -297,8 +284,6 @@
       }
 
       .service-inner {
-
-
         button {
           background-color: #D1002c;
           border-radius: 5px;
@@ -308,7 +293,6 @@
 
     .providing-service {
       .providing-service-inner {
-
         .top {
           display: flex;
           align-items: center;
@@ -490,8 +474,8 @@
 
     .quote {
       position: relative;
-      font-size: 30px;
-      top: 25px;
+      font-size: 40px;
+      top: 30px;
       left: -40%;
       color: #D1002c;
 
@@ -560,19 +544,16 @@
 
     .blog-card-outer {
       padding: 10px;
-
       .blog-card-inner {
-
         .blog-card-header {
           h5 {
             text-transform: capitalize;
             font-weight: normal;
 
-            &:hover{
+            &:hover {
               color: #D1002c;
               cursor: pointer;
             }
-
           }
         }
 
@@ -609,14 +590,14 @@
           }
 
 
-          .comment-and-count{
+          .comment-and-count {
             display: flex;
             align-items: center;
             justify-content: flex-start;
 
 
-            .fa-comment{
-              font-size: 12px!important;
+            .fa-comment {
+              font-size: 12px !important;
             }
           }
         }
@@ -674,10 +655,7 @@
           background-color: #D1002c;
           border-radius: 5px;
         }
-
-
       }
-
     }
   }
 }
@@ -744,17 +722,6 @@
               padding: 5px 0;
             }
           }
-
-          .community {
-
-          }
-
-          .about-us {
-          }
-
-          .company {
-          }
-
           .have-a-question {
             .contact {
               display: flex;
@@ -850,7 +817,7 @@
 
         .work-outer {
           .description {
-            h1.work-name{
+            h1.work-name {
               font-size: 60px;
             }
           }
@@ -862,7 +829,6 @@
       }
     }
   }
-
 }
 
 
@@ -905,9 +871,7 @@
           }
         }
       }
-
     }
-
   }
   .providing-service {
     .providing-service-inner {
@@ -1014,8 +978,19 @@
 }
 
 
-
 @media (max-width: 500px) {
+
+
+  .fa-circle-play {
+    font-size: 60px !important;
+    border-radius: 50%;
+    margin: 10px;
+    color: #D1002c;
+    position: absolute;
+    bottom: 5% !important;
+    right: 20% !important;
+  }
+
   .works-section-outer {
     .works-section-inner {
 
@@ -1024,23 +999,24 @@
 
         .work-outer {
           .description {
-            h1.work-name{
-              font-size:x-large;
+            h1.work-name {
+              font-size: x-large;
             }
           }
         }
       }
     }
   }
-  .project-estimate-outer{
-    .project-estimate-inner{
+  .project-estimate-outer {
+    .project-estimate-inner {
       padding: 5px;
-      .project-estimate-inner-image{
-        padding: 20px 20px!important;
+
+      .project-estimate-inner-image {
+        padding: 20px 20px !important;
         border-radius: 5px;
 
-        .inner-items{
-          h3{
+        .inner-items {
+          h3 {
             font-size: 30px;
           }
         }
@@ -1048,15 +1024,13 @@
     }
   }
 
-  .footer-outer{
-    .footer-inner{
-      .footer-items{
-        h5.title{
-          padding: 30px 0 20px 0!important;
+  .footer-outer {
+    .footer-inner {
+      .footer-items {
+        h5.title {
+          padding: 30px 0 20px 0 !important;
         }
       }
     }
   }
-
-
 }

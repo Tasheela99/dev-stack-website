@@ -17,6 +17,7 @@ export class HeaderDirective {
     console.log('Scroll event detected');
     if (scrollY > this.scrollPosition) {
       this.renderer.setStyle(this.el.nativeElement, 'background', 'white');
+      this.renderer.setStyle(this.el.nativeElement, 'box-shadow', '0 0 2px black');
     } else {
       this.renderer.setStyle(this.el.nativeElement, 'background:','transparent');
     }

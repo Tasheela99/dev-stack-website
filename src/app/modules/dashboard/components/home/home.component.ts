@@ -12,7 +12,8 @@ export class HomeComponent  implements  OnInit{
 
   slidesStore: any[] = [
     {
-      imageLink: 'https://preview.colorlib.com/theme/avo/images/bg_2.jpg.webp',
+
+      imageLink: 'https://preview.colorlib.com/theme/avo/images/bg_1.jpg.webp',
       titleText: 'we create modern & minimal website',
       subTitleText: 'a small river named duden flows by their place and supplies it with the necessary regelialia.',
       buttonText: 'start project',
@@ -20,7 +21,7 @@ export class HomeComponent  implements  OnInit{
       bottomText: 'more than a hundred successful projects'
     },
     {
-      imageLink: 'https://preview.colorlib.com/theme/avo/images/bg_1.jpg.webp',
+      imageLink: 'https://preview.colorlib.com/theme/avo/images/bg_2.jpg.webp',
       titleText: 'we create modern & minimal website',
       subTitleText: 'a small river named duden flows by their place and supplies it with the necessary regelialia.',
       buttonText: 'explore projects',
@@ -89,7 +90,7 @@ export class HomeComponent  implements  OnInit{
     touchDrag: true,
     pullDrag: true,
     navSpeed: 700,
-    dots: false,
+    dots: true,
     autoplay: true,
     autoplayTimeout: 5000,
     animateOut: 'fadeOut',
@@ -121,7 +122,7 @@ export class HomeComponent  implements  OnInit{
     dots: true,
     autoplay: true,
     autoplayTimeout: 2000,
-    margin: 20,
+    margin: 25,
     responsive: {
       0: {
         items: 1

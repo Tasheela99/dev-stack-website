@@ -10,7 +10,7 @@
   <ng-container *ngFor="let slide of slidesStore">
     <ng-template carouselSlide>
       <div class="landing-image-outer">
-        <div class="landing-image-inner" [style.background-image]="'url(' + slide.imageLink + ')'">
+        <div class="landing-image-inner" [style.background-image]="'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(' + slide.imageLink + ')'">
           <div class="container">
             <div class="row">
               <div class="col-12 items">
